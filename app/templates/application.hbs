@@ -1,3 +1,14 @@
-<h2 id="title">Welcome to Ember</h2>
+<h2>Books App</h2>
+
+<ul>
+  <li>{{link-to 'Home' 'index'}}</li>
+  <li>{{link-to 'All Books' 'books'}}</li>
+  <li>{{link-to 'Spanish Books' 'spanish' }}</li>
+  <li>{{link-to 'French Books' 'french' }}</li>
+  <li>{{link-to 'Books with price greater or equal than 100' 'price' }}</li>
+  <li>{{link-to 'Books with quantity less or equal than 100' 'quantity' }}</li>
+</ul>
+
+<hr>
 
 {{outlet}}

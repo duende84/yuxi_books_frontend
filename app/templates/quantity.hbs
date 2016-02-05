@@ -1,0 +1,12 @@
+<h2>Books with quantity less or equal than 100</h2>
+<ul>
+  {{#each model.books as |book|}}
+    <li>
+      {{#link-to 'book' book}}
+        {{book.title}} - {{book.author}}
+      {{/link-to}}
+    </li>
+  {{else}}
+    <li>No books found.</li>
+  {{/each}}
+</ul>

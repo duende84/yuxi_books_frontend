@@ -1,0 +1,12 @@
+<h2>French Books Name</h2>
+<ul>
+  {{#each model.books as |book|}}
+    <li>
+      {{#link-to 'book' book}}
+        {{book.title}}
+      {{/link-to}}
+    </li>
+  {{else}}
+    <li>No books found.</li>
+  {{/each}}
+</ul>

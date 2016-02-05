@@ -1,0 +1,15 @@
+<h2>{{model.title}} - {{model.author}}</h2>
+<p>
+  Country: {{model.country}}
+  <br>
+  Language: {{model.language}}
+  <br>
+  Price: {{model.price}}
+  <br>
+  Quantity: {{model.quantity}}
+</p>
+<p>
+  Updated at: {{formatted-date model.updated_at 'MMMM Do, YYYY [at] h:mm a'}}
+  <br>
+  Created at: {{formatted-date model.created_at 'MMMM Do, YYYY [at] h:mm a'}}
+</p>

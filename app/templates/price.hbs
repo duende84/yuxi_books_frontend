@@ -1,0 +1,12 @@
+<h2>Name of Books with price greater or equal than 100</h2>
+<ul>
+  {{#each model.books as |book|}}
+    <li>
+      {{#link-to 'book' book}}
+        {{book.title}}
+      {{/link-to}}
+    </li>
+  {{else}}
+    <li>No books found.</li>
+  {{/each}}
+</ul>
