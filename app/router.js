@@ -20,6 +20,8 @@ Router.map(function() {
     this.resource('price', { path: '/price' });
     this.resource('quantity', { path: '/quantity' });
   });
+
+  this.route('upload', { path: '/upload' });
 });
 
 export default Router;
